@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:title="Latihan"
+        android:summary="Pilih sumber latihan Anda"
+        android:key="@string/pref_source_exercise_key"
+        android:defaultValue="1"
+        android:entries="@array/exerciseSourceListArray"
+        android:entryValues="@array/exerciseSourceListValues"/>
+    <ListPreference
+        android:title="Kalori Harian"
+        android:summary="Pilih sumber kalori harian Anda"
+        android:key="@string/pref_source_calorie_key"
+        android:defaultValue="1"
+        android:entries="@array/calorieSourceListArray"
+        android:entryValues="@array/calorieSourceListValues"/>
+
+    <CheckBoxPreference
+        android:title="Notifikasi"
+        android:summary="Tampilkan Notifikasi"
+        android:key="@string/pref_notification_key"
+        android:defaultValue="true"/>
+    <EditTextPreference
+        android:title="Langkah Kaki"
+        android:summary="Panjang Langkah Kaki (cm)"
+        android:key="@string/pref_steplength_key"
+        android:defaultValue="@string/pref_steplength_value" />
+</PreferenceScreen>
